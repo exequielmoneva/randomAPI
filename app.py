@@ -15,11 +15,11 @@ def main():
     args = parser.parse_args()  # SAVE THE ARGUMENTS IN ORDER TO USE THEM LATER
     r = requests.get('https://randomuser.me/api/?ud=', params=args["user_id"])  # GET INFO FROM THE PAGE
     data = r.json()  # JSON FORMATTING
-    response = requests.put('https://randomuser.me/api/?ud=', params=args["user_id"])
+    #response = requests.put('https://randomuser.me/api/?ud=', params=args["user_id"])
     d = list(data['results'])  # GET THE DATA FROM 'results'
-    direccion = direc(dict(d[0]))  # TURN THE INFO INTO A DICT SO I CAN TAKE WHAT I NEED
-    nombre = name(dict(d[0]))
-    imagen = img(dict(d[0]))
+    direccion = direc(dict(d[0]))  # GET THE DIRECTION
+    nombre = name(dict(d[0]))  # GET THE FULL NAME
+    imagen = img(dict(d[0]))  # GET THE IMAGE
     user = {"user": {
         "lastname": nombre[0],
         "firstname": nombre[1],
