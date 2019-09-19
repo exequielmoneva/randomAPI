@@ -53,6 +53,5 @@ PONER EJEMPLO DE JSON
 List of possible improvements:
 
  - [ ] Write unit tests for all cases 
- - [ ] Add validations for the POST request
  - [ ] Find a way to decide the order of the JSON's objects
 
