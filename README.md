@@ -35,7 +35,7 @@ In order to use this project, you will have to use your terminal and, inside you
 
 Now, you should be able to try some POST requests on Postman.
 
-##POST user's information
+## POST user's information
 ```
 >POST http://localhost:5000/users
 ```
