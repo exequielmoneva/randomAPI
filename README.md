@@ -17,7 +17,7 @@ pip3 install virtualenv
 
 > - If pip3 command is not recognised by your terminal, try using **pip** instead.
 
-Then, you should create your own virtual environment. If you don't know how to do it, you can follow [this tutorial](https://realpython.com/lessons/creating-virtual-environment/)
+Then, you should create your own virtual environment. If you don't know how to do it, you can follow [this tutorial](https://realpython.com/lessons/creating-virtual-environment/).
 
 In order to have the exact same dependencies inside your virtual environment, you should use the requirements.txt file from the project using the following command:
 ```bash
@@ -29,9 +29,6 @@ In order to use this project, you will have to use your terminal and, inside you
 > set FLASK_APP=randomAPI
 > flask run
 ```
-> **Note:**
-
-> - If python3 command is not recognised by your terminal, try using **python** instead.
 
 Now, you should be able to try some POST requests on Postman.
 
