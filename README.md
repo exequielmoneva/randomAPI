@@ -33,4 +33,4 @@ In order to use this project, you will have to use your terminal and, inside you
 
 > - If python3 command is not recognised by your terminal, try using **python** instead.
 
-Now, you should e able to try some POST requests on Postman.
+Now, you should be able to try some POST requests on Postman.
