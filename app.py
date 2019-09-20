@@ -56,13 +56,13 @@ def main():
     imagen = img(dict(d[0]))  # GET THE IMAGE
     correo = email(dict(d[0]))  # GET THE E-MAIL
     user = {"user": {
-        "Lastname": nombre[0],
-        "Firstname": nombre[1],
-        "E-Mail": correo,
-        "Picture": imagen,
-        'Address': {
-            "Street": direccion[0],
-            "City": direccion[1]}
+        "lastname": nombre[0],
+        "firstname": nombre[1],
+        "email": correo,
+        "picture": imagen,
+        'address': {
+            "street": direccion[0],
+            "city": direccion[1]}
     }
     }
 
