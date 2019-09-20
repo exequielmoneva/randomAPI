@@ -33,22 +33,21 @@ def email(d):  # EXTRACT THE E-MAIL INFORMATION
     mail = str(d["email"])
     return mail
 
-"""
+
 @app.route('/')
 def local():
     return "System is up"
-"""
+
 
 @app.route('/users', methods=['POST'])
 def main():
     parser = reqparse.RequestParser()
     parser.add_argument("user_id")  # TAKE THE ID FROM THE BODY OF THE POST
     args = parser.parse_args()  # SAVE THE ARGUMENTS IN ORDER TO USE THEM LATER
-    if args["user_id"] is None or args["user_id"].strip() == "":
+    if args["user_id"] is None or args["user_id"].strip() == "":  # HAS A VALUE
         return "user_id is mandatory", 400
-    """
-    if not args["user_id"].strip().isdigit():
-        return "user_id must be a whole number", 400"""
+    if not args["user_id"].strip().isdigit():  # USER_ID IS WHOLE NUMBER
+        return "user_id must be a whole number", 400
     r = requests.get('https://randomuser.me/api/?ud=', params=args["user_id"])  # GET INFO FROM THE PAGE
     data = r.json()  # JSON FORMATTING
     d = list(data['results'])  # GET THE DATA FROM 'results'
