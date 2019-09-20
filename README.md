@@ -21,7 +21,7 @@ Then, you should create your own virtual environment. If you don't know how to d
 
 In order to install the exact same dependencies inside your virtual environment, you should use the requirements.txt file from the project using the following command:
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ``` 
 #### Usage
 In order to use this project, you will have to use your terminal. Inside your virtual environment, run the following task:
@@ -46,14 +46,14 @@ POST response example
 ```
 {
     "user": {
-        "Address": {
-            "City": "lille - sarthe",
-            "Street": "4047 avenue de l'abbé-roussel"
+        "address": {
+            "city": "lille - sarthe",
+            "street": "4047 avenue de l'abbé-roussel"
         },
-        "E-Mail": "alban.morin@example.com",
-        "Firstname": "alban",
-        "Lastname": "morin",
-        "Picture": "https://randomuser.me/api/portraits/men/79.jpg"
+        "email": "alban.morin@example.com",
+        "firstname": "alban",
+        "lastname": "morin",
+        "picture": "https://randomuser.me/api/portraits/men/79.jpg"
     }
 }
 ```
