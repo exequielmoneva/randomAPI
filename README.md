@@ -19,14 +19,14 @@ pip3 install virtualenv
 
 Then, you should create your own virtual environment. If you don't know how to do it, you can follow [this tutorial](https://realpython.com/lessons/creating-virtual-environment/).
 
-In order to have the exact same dependencies inside your virtual environment, you should use the requirements.txt file from the project using the following command:
+In order to install the exact same dependencies, inside your virtual environment, you should use the requirements.txt file from the project using the following command:
 ```bash
 pip install -r requirements.txt
 ``` 
 #### Usage
 In order to use this project, you will have to use your terminal and, inside your virtual environment, run the following task:
 ```bash
-> set FLASK_APP=randomAPI
+> set FLASK_APP=app.py
 > flask run
 ```
 
@@ -44,7 +44,18 @@ POST  request example
 ```
 POST response example
 ```
-PONER EJEMPLO DE JSON
+{
+    "user": {
+        "Address": {
+            "City": "lille - sarthe",
+            "Street": "4047 avenue de l'abbé-roussel"
+        },
+        "E-Mail": "alban.morin@example.com",
+        "Firstname": "alban",
+        "Lastname": "morin",
+        "Picture": "https://randomuser.me/api/portraits/men/79.jpg"
+    }
+}
 ```
 ## ToDo
 List of possible improvements:
